@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpeedMatch — Hızlı Eşleştirme</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="SpeedMatch: Hızlı eşleştirme için mini quiz. Veriler Google Forms'ta saklanır.">
+<style>
+iframe.formframe{width:100%;height:1200px;border:0;border-radius:12px;background:#0f1724}
+.notice{padding:10px;border:1px solid rgba(255,255,255,0.12);border-radius:10px;background:rgba(255,255,255,0.03);margin:10px 0}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>SpeedMatch 💜</h1>
+
+  <div class="card" style="margin-top:12px">
+    <h3>Etkinlik</h3>
+    <p><a href="https://fb.me/e/3y6AHK1NI" target="_blank" rel="noopener">Facebook etkinlik sayfasına git</a></p>
+  </div>
+
+  <div id="start" class="card">
+    <h3>Katılım & Rıza</h3>
+    <p class="muted">Devam etmeden önce lütfen şartları onayla:</p>
+    <ul class="muted">
+      <li>Veriler, doğrudan <strong>Google Forms</strong> üzerinde saklanır.</li>
+      <li>Bu site kişisel verileri sunucusunda tutmaz.</li>
+      <li>Yalnızca etkinlik içi eşleştirme amaçlı kullanılacaktır.</li>
+    </ul>
+    <div class="consent">
+      <label>
+        <input type="checkbox" id="agree">
+        <span> <a href="terms.html" target="_blank">Kullanım Şartları</a> ve <a href="privacy.html" target="_blank">Gizlilik Politikası</a>'nı okudum ve kabul ediyorum.</span>
+      </label>
+    </div>
+    <button id="continueBtn">Formu Aç</button>
+    <p class="muted small">Sorular: hedonistbudapest@gmail.com</p>
+  </div>
+
+  <div id="formwrap" class="card" style="display:none">
+    <div class="notice">Aşağıdaki form <strong>Google Forms</strong> içeriğidir. Gönderdiğiniz tüm bilgiler doğrudan organizatörün Google hesabına kaydolur.</div>
+    <iframe class="formframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfiDNIgJPRTV-1olhi1yP63oe0uNN2PI9-95VsanXLBpRTKMg/viewform?embedded=true" allow="clipboard-write; encrypted-media"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
